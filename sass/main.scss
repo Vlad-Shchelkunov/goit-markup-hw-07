@@ -1,0 +1,19 @@
+@import './utils/variables';
+@import './base/normalize';
+body {
+    background-color: #ffffff;
+    color: $text-color;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+@import './utils/placeholder';
+@import './components/logo';
+@import './components/page-header';
+@import './components/hero-section';
+@import './components/work-section';
+@import './components/about-section';
+@import './components/team-section';
+@import './components/clients-section';
+@import './components/page-footer';
+@import './components/social-link'
+
