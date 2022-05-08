@@ -4,7 +4,7 @@
     &__container {
         @extend %container;
     }
-    &__title {
+    &__hidden {
         @extend %visually-hidden;
     }
     &__list {
