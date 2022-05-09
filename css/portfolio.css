@@ -270,7 +270,7 @@ body {
 }
 
 /*Утилиты для списков*/
-.site-nav, .contact, .type, .card-set, .address__list, .social-link {
+.site-nav, .contact, .type, .card-set, .page-footer .address__list, .social-link {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -463,7 +463,7 @@ body {
   border: 1px solid #EEEEEE;
 }
 
-/*Кнопки в портфолио (с условным заголовком)*/
+/*Кнопки в портфолио (с условным h)*/
 .type {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -626,6 +626,40 @@ body {
   margin-bottom: 20px;
 }
 
+.page-footer .address {
+  margin-top: 20px;
+}
+
+.page-footer .address__item {
+  margin-bottom: 9px;
+}
+
+.page-footer .address__item:last-child {
+  margin-bottom: 0;
+}
+
+.page-footer .address__location {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.page-footer .address__contacts {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.page-footer .address__contacts:hover, .page-footer .address__contacts:focus {
+  color: #2196F3;
+}
+
 .page-footer__mailing {
   margin-left: auto;
 }
@@ -701,40 +735,6 @@ body {
   line-height: 1, 25;
   letter-spacing: 0.01em;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.address {
-  margin-top: 20px;
-}
-
-.address__item {
-  margin-bottom: 9px;
-}
-
-.address__item:last-child {
-  margin-bottom: 0;
-}
-
-.address__location {
-  color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-  text-decoration: none;
-  font-style: normal;
-}
-
-.address__contacts {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-  text-decoration: none;
-  font-style: normal;
-}
-
-.address__contacts:hover, .address__contacts:focus {
-  color: #2196F3;
 }
 
 /* Кнопки social link*/
