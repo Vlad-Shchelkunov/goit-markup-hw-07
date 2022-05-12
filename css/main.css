@@ -406,7 +406,7 @@ body {
 .site-nav__link--current::after {
   position: absolute;
   content: "";
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   border-radius: 4px;
   height: 4px;
@@ -495,7 +495,6 @@ body {
   max-width: 700px;
 }
 
-/* Модальное окно */
 .backdrop {
   position: fixed;
   top: 0;
