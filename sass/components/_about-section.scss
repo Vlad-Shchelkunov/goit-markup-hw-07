@@ -9,7 +9,15 @@
     }
     &__list {
         @extend %list;
-        display:flex
+        display:flex;
+        justify-content: space-between;
+        
+    }
+    &__item {
+    position: relative;
+    width: 370px;
+    display: flex;
+    z-index: -1;
     }
     &__subject {
         position: absolute;
@@ -26,14 +34,5 @@
         text-align: center;
         text-transform: uppercase;
         color: #FFFFFF;
-    }
-}
-.about__item {
-    margin-right: 30px;
-    position: relative;
-    width: 370px;
-    display: flex;
-    &:last-child {
-        margin-right: 0;
     }
 }

@@ -25,19 +25,15 @@
     }
 .address {
     margin-top: 20px;
-
     &__list {
         @extend %list;
     }
-
     &__item {
         margin-bottom: 9px;
-
         &:last-child {
             margin-bottom: 0;
         }
     }
-
     &__location {
         color: #FFFFFF;
         font-size: 14px;
@@ -46,7 +42,6 @@
         text-decoration: none;
         font-style: normal;
     }
-
     &__contacts {
         color: rgba(255, 255, 255, 0.6);
         font-size: 14px;
@@ -54,7 +49,6 @@
         line-height: 1.71;
         text-decoration: none;
         font-style: normal;
-
         &:hover,
         &:focus {
             color: $accent-color;
@@ -80,7 +74,6 @@
         margin-top: 0;
         margin-left: 12px;
     }
-    
     &__icon {
         margin-left: 10px;
         fill: currentColor;
@@ -95,7 +88,6 @@
     background-color: rgba(33, 150, 243, 0);
     color: #ffffff;
     padding: 15px 16px;
-
     &::placeholder {
         font-weight: 400;
         font-size: 16px;
