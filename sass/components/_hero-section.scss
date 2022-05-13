@@ -126,6 +126,7 @@
     &:focus {
         border: 1px solid $accent-color;
         cursor: pointer;
+        outline: none;
     }
     &:hover {
         cursor: pointer;
@@ -153,9 +154,9 @@
     resize: none;
     &:focus {
         border: 1px solid $accent-color;
+        outline: none;
     }
     &::placeholder {
-        font-weight: 400;
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.01em;
@@ -174,6 +175,7 @@
     color: $accent-color;
     }
     &__label {
+        position: relative;
         @include centeredFlex;
         font-size: 14px;
         line-height: 1.71;
@@ -183,19 +185,41 @@
         @extend %visually-hidden;
     }
 }
-.privat-policy__icon {
+// .privat-policy__icon {
+//     display: inline-block;
+//     width: 16px;
+//     height: 15px;
+//     border: 2px solid $text-color;
+//     border-radius: 2px;
+//     margin-right: 7px;
+//     .privat-policy__checkbox:checked+& {
+//         border-color: transparent;
+//         background-image: url(../images/check-active.svg);
+//         background-origin: border-box;
+//     }
+// }
+.privat-policy__icon-active {
     display: inline-block;
     width: 16px;
     height: 15px;
-    border: 2px solid $text-color;
-    border-radius: 2px;
     margin-right: 7px;
+    opacity: 0;
+
     .privat-policy__checkbox:checked+& {
-        border-color: transparent;
-        background-image: url(../images/check-active.svg);
-        background-origin: border-box;
+        opacity: 1;
     }
 }
+.privat-policy__icon {
+    position:absolute;
+    left: 10px;
+    top: 4px;
+    width: 16px;
+    height: 15px;
+    opacity: 1;
+}
+    .privat-policy__checkbox:checked~.privat-policy__icon {
+        opacity: 0;
+    }
 .field__button {
     @extend %button;
     display: block;

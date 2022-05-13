@@ -616,6 +616,7 @@ body {
 .field__input:focus {
   border: 1px solid #2196F3;
   cursor: pointer;
+  outline: none;
 }
 
 .field__input:hover {
@@ -649,10 +650,10 @@ body {
 
 .field__textarea:focus {
   border: 1px solid #2196F3;
+  outline: none;
 }
 
 .field__textarea::-webkit-input-placeholder {
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -660,7 +661,6 @@ body {
 }
 
 .field__textarea:-ms-input-placeholder {
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -668,7 +668,6 @@ body {
 }
 
 .field__textarea::-ms-input-placeholder {
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -676,7 +675,6 @@ body {
 }
 
 .field__textarea::placeholder {
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -698,6 +696,7 @@ body {
 }
 
 .privat-policy__label {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -712,19 +711,29 @@ body {
   color: #757575;
 }
 
-.privat-policy__icon {
+.privat-policy__icon-active {
   display: inline-block;
   width: 16px;
   height: 15px;
-  border: 2px solid #212121;
-  border-radius: 2px;
   margin-right: 7px;
+  opacity: 0;
 }
 
-.privat-policy__checkbox:checked + .privat-policy__icon {
-  border-color: transparent;
-  background-image: url(../images/check-active.svg);
-  background-origin: border-box;
+.privat-policy__checkbox:checked + .privat-policy__icon-active {
+  opacity: 1;
+}
+
+.privat-policy__icon {
+  position: absolute;
+  left: 10px;
+  top: 4px;
+  width: 16px;
+  height: 15px;
+  opacity: 1;
+}
+
+.privat-policy__checkbox:checked ~ .privat-policy__icon {
+  opacity: 0;
 }
 
 .field__button {
